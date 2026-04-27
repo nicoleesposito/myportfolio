@@ -4,12 +4,13 @@ import "./App.css";
 import './index.css';
 
 import Home from "./pages/home";
-import About from "./pages/about";
 import Projects from "./pages/projects";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import GameReview from "./pages/gamereview";
 import Tix from "./pages/tix";
 import CloseKnit from "./pages/closeknit";
+import SVGogh from "./pages/svgogh";
 
 function App() {
   return (
@@ -17,12 +18,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/game-review" element={<GameReview />} />
         <Route path="/tix" element={<Tix />} />
         <Route path="/closeknit" element={<CloseKnit />} />
+        <Route path="/svgogh" element={<SVGogh />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
